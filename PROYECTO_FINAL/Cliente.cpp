@@ -1,7 +1,6 @@
-#include <iostream>
-#include <string>
 #include "Cliente.h"
 
+// Constructor con parámetros
 Cliente::Cliente(string _login, string _password, string _calificacion, string _deudas)
     : Usuario(_login, _password), calificacionCliente(_calificacion), deudasPendientesCliente(_deudas)
 {

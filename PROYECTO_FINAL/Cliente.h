@@ -12,6 +12,8 @@ private:
     string deudasPendientesCliente;
 
 public:
+    // Constructor con parámetros
     Cliente(string _login, string _password, string _calificacion, string _deudas);
+
     bool verificarLogin(string _username, string _password);
 };

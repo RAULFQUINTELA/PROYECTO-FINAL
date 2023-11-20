@@ -1,7 +1,6 @@
-#include <iostream>
-#include <string>
 #include "Chofer.h"
 
+// Constructor con parámetros
 Chofer::Chofer(string _login, string _password, string _calificacion, string _deudas)
     : Usuario(_login, _password), calificacionChofer(_calificacion), deudasPendientesChofer(_deudas)
 {

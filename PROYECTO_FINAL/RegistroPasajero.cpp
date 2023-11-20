@@ -2,7 +2,7 @@
 
 Cliente RegistroPasajero::registrarPasajero()
 {
-    string nombre, apellido, telefono, carnetIdentidad;
+    string nombre, apellido, telefono, carnetIdentidad, password;
 
     cout << "Registro de Pasajero" << endl;
     cout << "Nombre: ";
@@ -13,7 +13,9 @@ Cliente RegistroPasajero::registrarPasajero()
     cin >> telefono;
     cout << "Carnet de Identidad: ";
     cin >> carnetIdentidad;
+    cout << "Contraseña: ";
+    cin >> password;
 
     // Crear y devolver un nuevo Cliente
-    return Cliente(nombre + apellido, "password", "10", "0");
+    return Cliente(nombre + apellido, password, "10", "0");
 }
